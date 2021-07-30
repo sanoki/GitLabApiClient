@@ -26,6 +26,8 @@ namespace GitLabApiClient.Test.Internal.Queries
                     Labels = { "label1", "label2" },
                     CreatedAfter = new DateTime(1991, 11, 11, 1, 1, 1),
                     CreatedBefore = new DateTime(1991, 12, 12, 2, 2, 2),
+                    UpdatedAfter = new DateTime(1992, 11, 11, 1, 1, 1),
+                    UpdatedBefore = new DateTime(1992, 12, 12, 2, 2, 2),
                     Scope = Scope.All,
                     AuthorId = 1,
                     AssigneeId = 2
@@ -40,6 +42,8 @@ namespace GitLabApiClient.Test.Internal.Queries
                               "labels=label1%2Clabel2&" +
                               "created_after=1991-11-11T01%3A01%3A01.0000000&" +
                               "created_before=1991-12-12T02%3A02%3A02.0000000&" +
+                              "updated_after=1992-11-11T01%3A01%3A01.0000000&" +
+                              "updated_before=1992-12-12T02%3A02%3A02.0000000&" +
                               "scope=all&" +
                               "author_id=1&" +
                               "assignee_id=2");

@@ -35,6 +35,12 @@ namespace GitLabApiClient.Internal.Queries
             if (options.CreatedBefore.HasValue)
                 query.Add("created_before", options.CreatedBefore.Value);
 
+            if (options.UpdatedAfter.HasValue)
+                query.Add("updated_after", options.UpdatedAfter.Value);
+
+            if (options.UpdatedBefore.HasValue)
+                query.Add("updated_before", options.UpdatedBefore.Value);
+
             query.Add("scope", GetScopeQueryValue(options.Scope));
 
             if (options.AuthorId.HasValue)

@@ -52,6 +52,16 @@ namespace GitLabApiClient.Models.MergeRequests.Requests
         public DateTime? CreatedBefore { get; set; }
 
         /// <summary>
+        /// Return issues updated after the given time (inclusive).
+        /// </summary>
+        public DateTime? UpdatedAfter { get; set; }
+
+        /// <summary>
+        /// Return issues updated before the given time (inclusive).
+        /// </summary>
+        public DateTime? UpdatedBefore { get; set; }
+
+        /// <summary>
         /// Return merge requests for the given scope.
         /// Defaults to merge requests created by anyone.
         /// </summary>
